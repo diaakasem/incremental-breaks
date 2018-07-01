@@ -20,7 +20,7 @@ slack.setWebhook(webhookUri);
 
 function closeApp() {
     clearInterval(haltingInterval);
-    process.exist(0);
+    process.exit(0);
 }
 
 function sendSlackMessage(msg) {
