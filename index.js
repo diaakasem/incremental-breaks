@@ -63,7 +63,7 @@ function main() {
     // after the calculated worktime ends
     setTimeout(function() {
         onBreak(workTime, breakMinutes);
-    }, workTime);
+    }, workTime * 60 * 1000);
 }
 
 new CronJob('0 * * * *', main)
