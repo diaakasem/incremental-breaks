@@ -24,7 +24,8 @@ function closeApp() {
 }
 
 function sendSlackMessage(msg) {
-    // TODO: Configure the channel and workspace in api.slack.com
+    console.log(msg);
+    // Configure the channel and workspace in api.slack.com
     slack.webhook({
         //channel: "#general",
         //username: "webhookbot",
@@ -66,5 +67,11 @@ function main() {
     }, workTime * 60 * 1000);
 }
 
-new CronJob('0 * * * *', main)
+let cronJob = new CronJob({
+    cronTime: '0 * * * *',
+    onTick: main,
+    start: true,
+    timeZone:'Africa/Cairo'
+});
+cronJob.start();
 sendSlackMessage("Good Morning, Its a really happy day! :wink: ")
