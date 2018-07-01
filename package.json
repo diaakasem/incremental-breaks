@@ -1,0 +1,25 @@
+{
+  "name": "incremental-breaks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diaakasem/incremental-breaks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diaakasem/incremental-breaks/issues"
+  },
+  "homepage": "https://github.com/diaakasem/incremental-breaks#readme",
+  "dependencies": {
+    "cron": "^1.3.0",
+    "slack-node": "^0.1.8"
+  }
+}
